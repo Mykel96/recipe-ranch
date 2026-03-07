@@ -29,8 +29,8 @@ export default function PrivacyPage() {
             <Block title={isGerman ? "1. Einleitung" : "1. Introduction"}>
               <p>
                 {isGerman
-                  ? "Willkommen bei Recepy Ranch (\"wir\" oder \"uns\"). Der Schutz deiner personenbezogenen Daten ist uns wichtig. Diese Datenschutzerklaerung erklaert, welche Informationen wir erheben, wie wir sie verwenden, wann wir sie weitergeben und wie wir sie schuetzen, wenn du unsere Website und Dienste nutzt (zusammen der \"Dienst\"). Mit der Nutzung des Dienstes stimmst du dieser Verarbeitung zu."
-                  : "Welcome to Recepy Ranch (\"we,\" \"us,\" or \"our\"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services (collectively, the \"Service\"). By using the Service, you agree to the collection and use of information in accordance with this policy."}
+                  ? "Willkommen bei Recipe Ranch (\"wir\" oder \"uns\"). Der Schutz deiner personenbezogenen Daten ist uns wichtig. Diese Datenschutzerklaerung erklaert, welche Informationen wir erheben, wie wir sie verwenden, wann wir sie weitergeben und wie wir sie schuetzen, wenn du unsere Website und Dienste nutzt (zusammen der \"Dienst\"). Mit der Nutzung des Dienstes stimmst du dieser Verarbeitung zu."
+                  : "Welcome to Recipe Ranch (\"we,\" \"us,\" or \"our\"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services (collectively, the \"Service\"). By using the Service, you agree to the collection and use of information in accordance with this policy."}
               </p>
             </Block>
 
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
                 <li><strong>{isGerman ? "Oeffentliche Inhalte:" : "Public Content:"}</strong> {isGerman ? "Oeffentlich geteilte Rezepte, Kommentare und Profilangaben sind fuer alle Nutzer sichtbar." : "Recipes, comments, and profile information you make public are visible to all users."}</li>
                 <li><strong>{isGerman ? "Dienstleister:" : "Service Providers:"}</strong> {isGerman ? "Wir nutzen externe Anbieter (z. B. Supabase, Vercel), die Daten in unserem Auftrag unter Vertraulichkeit verarbeiten." : "We use third-party services (e.g., Supabase for hosting and authentication, Vercel for deployment) that may process data on our behalf under strict confidentiality obligations."}</li>
                 <li><strong>{isGerman ? "Rechtliche Gruende:" : "Legal Requirements:"}</strong> {isGerman ? "Wir koennen Daten offenlegen, wenn wir gesetzlich dazu verpflichtet sind." : "We may disclose information if required by law, regulation, legal process, or governmental request."}</li>
-                <li><strong>{isGerman ? "Sicherheit:" : "Safety:"}</strong> {isGerman ? "Wir koennen Daten weitergeben, um Rechte, Eigentum oder Sicherheit von Recepy Ranch, Nutzern oder Dritten zu schuetzen." : "We may disclose information to protect the rights, property, or safety of Recepy Ranch, our users, or the public."}</li>
+                <li><strong>{isGerman ? "Sicherheit:" : "Safety:"}</strong> {isGerman ? "Wir koennen Daten weitergeben, um Rechte, Eigentum oder Sicherheit von Recipe Ranch, Nutzern oder Dritten zu schuetzen." : "We may disclose information to protect the rights, property, or safety of Recipe Ranch, our users, or the public."}</li>
               </ul>
             </Block>
 

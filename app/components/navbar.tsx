@@ -78,7 +78,7 @@ export default function Navbar() {
             <Image src="/logo.png" alt="" width={56} height={56} className="w-12 h-12 sm:w-14 sm:h-14 object-contain" aria-hidden="true" />
             <div className="flex flex-col leading-tight">
               <span className="font-[family-name:var(--font-heading)] text-xl sm:text-2xl font-bold text-brown-800 group-hover:text-terracotta-500 transition-colors">
-                Recepy Ranch
+                Recipe Ranch
               </span>
               <span className="font-[family-name:var(--font-accent)] text-xs sm:text-sm text-brown-400 -mt-1 hidden sm:block">
                 {t("nav.tagline")}

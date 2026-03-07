@@ -29,16 +29,16 @@ export default function TermsPage() {
             <Block title={isGerman ? "1. Geltung der Bedingungen" : "1. Acceptance of Terms"}>
               <p>
                 {isGerman
-                  ? "Mit Zugriff auf oder Nutzung von Recepy Ranch (der \"Dienst\") akzeptierst du diese AGB. Wenn du diesen Bedingungen nicht zustimmst, darfst du den Dienst nicht nutzen. Wir koennen diese AGB jederzeit anpassen. Die weitere Nutzung nach einer Aenderung gilt als Zustimmung."
-                  : "By accessing or using Recepy Ranch (the \"Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you must not use the Service. We reserve the right to update these Terms at any time. Continued use of the Service after modifications constitutes acceptance of the revised Terms."}
+                  ? "Mit Zugriff auf oder Nutzung von Recipe Ranch (der \"Dienst\") akzeptierst du diese AGB. Wenn du diesen Bedingungen nicht zustimmst, darfst du den Dienst nicht nutzen. Wir koennen diese AGB jederzeit anpassen. Die weitere Nutzung nach einer Aenderung gilt als Zustimmung."
+                  : "By accessing or using Recipe Ranch (the \"Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you must not use the Service. We reserve the right to update these Terms at any time. Continued use of the Service after modifications constitutes acceptance of the revised Terms."}
               </p>
             </Block>
 
             <Block title={isGerman ? "2. Beschreibung des Dienstes" : "2. Description of Service"}>
               <p>
                 {isGerman
-                  ? "Recepy Ranch ist eine Community-Plattform zum Teilen, Entdecken und Speichern von Rezepten. Der Dienst wird \"wie besehen\" und \"wie verfuegbar\" bereitgestellt, ohne ausdrueckliche oder stillschweigende Gewaehrleistungen."
-                  : "Recepy Ranch is a community-driven platform that allows users to share, discover, and save recipes. The Service is provided \"as is\" and \"as available\" without warranties of any kind, either express or implied."}
+                  ? "Recipe Ranch ist eine Community-Plattform zum Teilen, Entdecken und Speichern von Rezepten. Der Dienst wird \"wie besehen\" und \"wie verfuegbar\" bereitgestellt, ohne ausdrueckliche oder stillschweigende Gewaehrleistungen."
+                  : "Recipe Ranch is a community-driven platform that allows users to share, discover, and save recipes. The Service is provided \"as is\" and \"as available\" without warranties of any kind, either express or implied."}
               </p>
             </Block>
 
@@ -53,7 +53,7 @@ export default function TermsPage() {
 
             <Block title={isGerman ? "4. Nutzerinhalte" : "4. User Content"}>
               <Subblock title={isGerman ? "4.1 Eigentum" : "4.1 Ownership"}>
-                <p>{isGerman ? "Du bleibst Eigentuemer aller von dir eingestellten Inhalte (\"Nutzerinhalte\"), inklusive Rezepte, Kommentare und Bilder. Mit dem Einstellen raeumst du Recepy Ranch eine nicht-exklusive, weltweite, gebuehrenfreie, unterlizenzierbare Lizenz ein, diese Inhalte zum Betrieb und zur Bereitstellung des Dienstes zu verwenden, anzuzeigen, zu vervielfaeltigen und zu verbreiten." : "You retain ownership of all content you submit to the Service (\"User Content\"), including recipes, comments, and images. By submitting User Content, you grant Recepy Ranch a non-exclusive, worldwide, royalty-free, sublicensable license to use, display, reproduce, and distribute your User Content solely in connection with operating and providing the Service."}</p>
+                <p>{isGerman ? "Du bleibst Eigentuemer aller von dir eingestellten Inhalte (\"Nutzerinhalte\"), inklusive Rezepte, Kommentare und Bilder. Mit dem Einstellen raeumst du Recipe Ranch eine nicht-exklusive, weltweite, gebuehrenfreie, unterlizenzierbare Lizenz ein, diese Inhalte zum Betrieb und zur Bereitstellung des Dienstes zu verwenden, anzuzeigen, zu vervielfaeltigen und zu verbreiten." : "You retain ownership of all content you submit to the Service (\"User Content\"), including recipes, comments, and images. By submitting User Content, you grant Recipe Ranch a non-exclusive, worldwide, royalty-free, sublicensable license to use, display, reproduce, and distribute your User Content solely in connection with operating and providing the Service."}</p>
               </Subblock>
               <Subblock title={isGerman ? "4.2 Verantwortung" : "4.2 Responsibility"}>
                 <p>{isGerman ? "Du bist allein fuer deine Nutzerinhalte verantwortlich und sicherst zu, dass:" : "You are solely responsible for the User Content you submit. You represent and warrant that:"}</p>
@@ -83,7 +83,7 @@ export default function TermsPage() {
             </Block>
 
             <Block title={isGerman ? "6. Geistiges Eigentum" : "6. Intellectual Property"}>
-              <p>{isGerman ? "Der Dienst sowie seine urspruenglichen Inhalte (ausgenommen Nutzerinhalte), Funktionen und Merkmale sind Eigentum von Recepy Ranch bzw. seiner Lizenzgeber. Der Dienst ist durch Urheber-, Marken- und weitere Schutzrechte geschuetzt. Unsere Marken duerfen ohne vorherige schriftliche Zustimmung nicht verwendet werden." : "The Service and its original content (excluding User Content), features, and functionality are and will remain the exclusive property of Recepy Ranch and its licensors. The Service is protected by copyright, trademark, and other applicable laws. Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent."}</p>
+              <p>{isGerman ? "Der Dienst sowie seine urspruenglichen Inhalte (ausgenommen Nutzerinhalte), Funktionen und Merkmale sind Eigentum von Recipe Ranch bzw. seiner Lizenzgeber. Der Dienst ist durch Urheber-, Marken- und weitere Schutzrechte geschuetzt. Unsere Marken duerfen ohne vorherige schriftliche Zustimmung nicht verwendet werden." : "The Service and its original content (excluding User Content), features, and functionality are and will remain the exclusive property of Recipe Ranch and its licensors. The Service is protected by copyright, trademark, and other applicable laws. Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent."}</p>
             </Block>
 
             <Block title={isGerman ? "7. Gewaehrleistungsausschluss" : "7. Disclaimer of Warranties"}>
@@ -100,7 +100,7 @@ export default function TermsPage() {
 
             <Block title={isGerman ? "8. Haftungsbeschraenkung" : "8. Limitation of Liability"}>
               <p>
-                {isGerman ? "SOWEIT GESETZLICH ZULAESSIG, HAFTEN RECEPY RANCH UND SEINE ORGANE NICHT FUER MITTELBARE, ZUFAELLIGE, BESONDERE ODER FOLGESCHAEDEN, EINSCHLIESSLICH ENTGANGENEN GEWINNS, DATENVERLUST ODER SONSTIGER IMMATERIELLER SCHAEDEN, DIE ENTSTEHEN AUS:" : "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL RECEPY RANCH, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:"}
+                {isGerman ? "SOWEIT GESETZLICH ZULAESSIG, HAFTEN RECIPE RANCH UND SEINE ORGANE NICHT FUER MITTELBARE, ZUFAELLIGE, BESONDERE ODER FOLGESCHAEDEN, EINSCHLIESSLICH ENTGANGENEN GEWINNS, DATENVERLUST ODER SONSTIGER IMMATERIELLER SCHAEDEN, DIE ENTSTEHEN AUS:" : "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL RECIPE RANCH, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:"}
               </p>
               <ul>
                 <li>{isGerman ? "deinem Zugriff auf den Dienst oder der Unmoeglichkeit der Nutzung" : "YOUR ACCESS TO OR USE OF (OR INABILITY TO ACCESS OR USE) THE SERVICE"}</li>
@@ -116,7 +116,7 @@ export default function TermsPage() {
 
             <Block title={isGerman ? "9. Freistellung" : "9. Indemnification"}>
               <p>
-                {isGerman ? "Du stellst Recepy Ranch sowie deren Mitarbeitende und Vertretungen von Anspruechen, Schaeden und Kosten (einschliesslich angemessener Anwaltskosten) frei, die aus deiner Nutzung des Dienstes, deinen Inhalten, einem Verstoss gegen diese AGB oder gegen Rechte Dritter entstehen." : "You agree to defend, indemnify, and hold harmless Recepy Ranch and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with: (a) your access to or use of the Service; (b) your User Content; (c) your violation of these Terms; or (d) your violation of any third-party rights."}
+                {isGerman ? "Du stellst Recipe Ranch sowie deren Mitarbeitende und Vertretungen von Anspruechen, Schaeden und Kosten (einschliesslich angemessener Anwaltskosten) frei, die aus deiner Nutzung des Dienstes, deinen Inhalten, einem Verstoss gegen diese AGB oder gegen Rechte Dritter entstehen." : "You agree to defend, indemnify, and hold harmless Recipe Ranch and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with: (a) your access to or use of the Service; (b) your User Content; (c) your violation of these Terms; or (d) your violation of any third-party rights."}
               </p>
             </Block>
 
@@ -137,7 +137,7 @@ export default function TermsPage() {
             </Block>
 
             <Block title={isGerman ? "14. Gesamte Vereinbarung" : "14. Entire Agreement"}>
-              <p>{isGerman ? "Diese AGB bilden zusammen mit der Datenschutzerklaerung die gesamte Vereinbarung zwischen dir und Recepy Ranch in Bezug auf die Nutzung des Dienstes und ersetzen fruehere Absprachen." : "These Terms, together with the Privacy Policy, constitute the entire agreement between you and Recepy Ranch regarding the use of the Service and supersede all prior agreements and understandings."}</p>
+              <p>{isGerman ? "Diese AGB bilden zusammen mit der Datenschutzerklaerung die gesamte Vereinbarung zwischen dir und Recipe Ranch in Bezug auf die Nutzung des Dienstes und ersetzen fruehere Absprachen." : "These Terms, together with the Privacy Policy, constitute the entire agreement between you and Recipe Ranch regarding the use of the Service and supersede all prior agreements and understandings."}</p>
             </Block>
 
             <Block title={isGerman ? "15. Kontakt" : "15. Contact Us"}>

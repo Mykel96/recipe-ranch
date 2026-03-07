@@ -51,7 +51,7 @@ const en: Translations = {
   // Testimonials
   "testimonials.subtitle": "Straight from the folks",
   "testimonials.title": "What Our Cooks Say",
-  "testimonials.description": "Don't just take our word for it — hear from the good folks who call Recepy Ranch home.",
+  "testimonials.description": "Don't just take our word for it — hear from the good folks who call Recipe Ranch home.",
   "testimonials.quote1": "I finally have a place to put all Mama's recipes so the whole family can find 'em. This app feels like sittin' on the porch with good people.",
   "testimonials.name1": "Dolly Mae",
   "testimonials.role1": "Home Cook from Tennessee",
@@ -82,7 +82,7 @@ const en: Translations = {
   "footer.stayInTouch": "Stay in Touch",
   "footer.newsletter": "New recipes and updates — delivered straight to your front porch. Coming soon!",
   "footer.soon": "Soon",
-  "footer.copyright": "Recepy Ranch. Made with 🤍 and a whole lotta butter.",
+  "footer.copyright": "Recipe Ranch. Made with 🤍 and a whole lotta butter.",
   "footer.privacy": "Privacy",
   "footer.terms": "Terms",
 
@@ -322,7 +322,7 @@ const de: Translations = {
   // Testimonials
   "testimonials.subtitle": "Direkt von unseren Nutzern",
   "testimonials.title": "Was unsere Köche sagen",
-  "testimonials.description": "Nimm nicht nur unser Wort — hör von den Leuten, die Recepy Ranch ihr Zuhause nennen.",
+  "testimonials.description": "Nimm nicht nur unser Wort — hör von den Leuten, die Recipe Ranch ihr Zuhause nennen.",
   "testimonials.quote1": "Ich habe endlich einen Ort, um all die Rezepte meiner Mama aufzubewahren, damit die ganze Familie sie finden kann. Diese App fühlt sich an wie ein gemütlicher Abend mit guten Freunden.",
   "testimonials.name1": "Dolly Mae",
   "testimonials.role1": "Hobbyköchin aus Tennessee",
@@ -353,7 +353,7 @@ const de: Translations = {
   "footer.stayInTouch": "In Kontakt bleiben",
   "footer.newsletter": "Neue Rezepte und Updates — direkt zu dir nach Hause. Kommt bald!",
   "footer.soon": "Bald",
-  "footer.copyright": "Recepy Ranch. Gemacht mit 🤍 und ganz viel Butter.",
+  "footer.copyright": "Recipe Ranch. Gemacht mit 🤍 und ganz viel Butter.",
   "footer.privacy": "Datenschutz",
   "footer.terms": "AGB",
 

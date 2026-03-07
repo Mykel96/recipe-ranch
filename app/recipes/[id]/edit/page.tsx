@@ -297,7 +297,7 @@ export default function EditRecipePage({
         <Link href={`/recipes/${id}`} className="inline-flex items-center gap-2 group">
           <Image src="/logo.png" alt="" width={36} height={36} className="w-9 h-9 object-contain" aria-hidden="true" />
           <span className="font-[family-name:var(--font-heading)] text-lg font-bold text-brown-800 group-hover:text-terracotta-500 transition-colors">
-            Recepy Ranch
+            Recipe Ranch
           </span>
         </Link>
         <Link

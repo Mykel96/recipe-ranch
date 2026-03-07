@@ -31,7 +31,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4 group">
               <Image src="/logo.png" alt="" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" aria-hidden="true" />
               <span className="font-[family-name:var(--font-heading)] text-xl font-bold text-cream group-hover:text-golden-400 transition-colors">
-                Recepy Ranch
+                Recipe Ranch
               </span>
             </Link>
             <p className="font-[family-name:var(--font-body)] text-sm text-brown-400 leading-relaxed mb-4">

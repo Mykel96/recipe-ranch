@@ -4,7 +4,7 @@ import CookieBanner from "./components/cookie-banner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Recepy Ranch — Where Good Folks Share Good Food",
+  title: "Recipe Ranch — Where Good Folks Share Good Food",
   description:
     "A Southern-style, community-driven recipe sharing app. Pull up a chair. Supper's almost ready.",
   keywords: ["recipes", "southern cooking", "community", "food sharing", "comfort food"],
