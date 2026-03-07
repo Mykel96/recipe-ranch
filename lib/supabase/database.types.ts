@@ -143,3 +143,12 @@ export interface Database {
     };
   };
 }
+
+export type ProfileRow = Database["public"]["Tables"]["profiles"]["Row"];
+export type RecipeRow = Database["public"]["Tables"]["recipes"]["Row"];
+export type RecipeInsert = Database["public"]["Tables"]["recipes"]["Insert"];
+export type RecipeUpdate = Database["public"]["Tables"]["recipes"]["Update"];
+export type FavoriteRow = Database["public"]["Tables"]["favorites"]["Row"];
+export type FavoriteInsert = Database["public"]["Tables"]["favorites"]["Insert"];
+export type RatingRow = Database["public"]["Tables"]["ratings"]["Row"];
+export type RatingInsert = Database["public"]["Tables"]["ratings"]["Insert"];
