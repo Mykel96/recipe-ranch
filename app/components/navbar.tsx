@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, LogOut, User, Plus } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
+import type { ProfileRow } from "@/lib/supabase/database.types";
 import { useTranslation } from "@/lib/i18n/context";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
 
@@ -39,11 +40,11 @@ export default function Navbar() {
 
     const supabase = createClient();
     supabase
-      .from("profiles")
+      .from<ProfileRow>("profiles")
       .select("avatar_url")
       .eq("id", user.id)
       .single()
-      .then(({ data }) => {
+      .then(({ data }: { data: Pick<ProfileRow, "avatar_url"> | null }) => {
         setProfileAvatarUrl(data?.avatar_url ?? null);
       });
   }, [user]);

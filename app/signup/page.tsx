@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Eye, EyeOff, ChefHat, Check } from "lucide-react";
@@ -9,7 +8,6 @@ import { createClient } from "@/lib/supabase/client";
 import { useTranslation } from "@/lib/i18n/context";
 
 export default function SignupPage() {
-  const router = useRouter();
   const { t } = useTranslation();
 
   const PASSWORD_REQUIREMENTS = [
