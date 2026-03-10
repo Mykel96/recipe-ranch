@@ -177,7 +177,7 @@ export default function NewRecipePage() {
         .filter((s) => s.instruction.trim())
         .map((s, idx) => ({ order: idx + 1, instruction: s.instruction })),
       published: true,
-    });
+    } as never);
 
     if (error) {
       setError(error.message);
@@ -322,6 +322,7 @@ export default function NewRecipePage() {
                 <div>
                   {imagePreview ? (
                     <div className="relative w-full h-48 rounded-xl overflow-hidden border border-brown-200">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={imagePreview} alt="Preview" className="w-full h-full object-cover" />
                       <button
                         type="button"

@@ -76,7 +76,7 @@ export default function RecipeCard({
     } else {
       await supabase
         .from("favorites")
-        .insert({ user_id: userId, recipe_id: recipe.id });
+        .insert({ user_id: userId, recipe_id: recipe.id } as never);
       setFavorited(true);
       onFavoriteToggle?.(recipe.id, true);
     }

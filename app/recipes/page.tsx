@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { Suspense, useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Search, SlidersHorizontal, ChevronDown, X } from "lucide-react";
 import Link from "next/link";
@@ -40,7 +40,7 @@ const CATEGORIES = [
 
 type SortOption = "name" | "time-asc" | "time-desc" | "servings";
 
-export default function RecipesPage() {
+function RecipesPageContent() {
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
   const [isLoadingRecipes, setIsLoadingRecipes] = useState(true);
   const [search, setSearch] = useState("");
@@ -391,5 +391,19 @@ export default function RecipesPage() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function RecipesPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-cream flex items-center justify-center">
+          <span className="font-[family-name:var(--font-body)] text-brown-500">Loading...</span>
+        </div>
+      }
+    >
+      <RecipesPageContent />
+    </Suspense>
   );
 }

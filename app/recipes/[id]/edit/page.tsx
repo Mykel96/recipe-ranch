@@ -407,6 +407,7 @@ export default function EditRecipePage({
                 <div>
                   {imagePreview ? (
                     <div className="relative w-full h-48 rounded-xl overflow-hidden border border-brown-200">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={imagePreview} alt="Preview" className="w-full h-full object-cover" />
                       <button
                         type="button"

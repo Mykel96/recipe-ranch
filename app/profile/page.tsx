@@ -50,8 +50,9 @@ export default function ProfilePage() {
       .eq("published", true)
       .order("created_at", { ascending: false });
 
-    if (data) {
-      const recipeIds = data.map((recipe) => recipe.id);
+    const recipes = data as import("@/lib/supabase/database.types").RecipeRow[] | null;
+    if (recipes) {
+      const recipeIds = recipes.map((recipe) => recipe.id);
       const ratingMap = new Map<string, { sum: number; count: number }>();
 
       if (recipeIds.length > 0) {
@@ -71,7 +72,7 @@ export default function ProfilePage() {
       }
 
       setMyRecipes(
-        data.map((r) => {
+        recipes.map((r) => {
           const rating = ratingMap.get(r.id);
           return {
             id: r.id,
@@ -94,11 +95,12 @@ export default function ProfilePage() {
 
   const fetchFavorites = useCallback(async (userId: string) => {
     const supabase = createClient();
-    const { data: favs } = await supabase
+    const { data: favsData } = await supabase
       .from("favorites")
       .select("recipe_id")
       .eq("user_id", userId);
 
+    const favs = favsData as { recipe_id: string }[] | null;
     if (!favs || favs.length === 0) {
       setFavoriteRecipes([]);
       setFavoriteIds(new Set());
@@ -108,12 +110,14 @@ export default function ProfilePage() {
     const ids = favs.map((f) => f.recipe_id);
     setFavoriteIds(new Set(ids));
 
-    const { data: recipes } = await supabase
+    const { data: recipesData } = await supabase
       .from("recipes")
       .select("*, profiles!recipes_author_id_fkey(display_name)")
       .in("id", ids)
       .eq("published", true);
 
+    type RecipeWithProfile = import("@/lib/supabase/database.types").RecipeRow & { profiles: { display_name: string } | null };
+    const recipes = recipesData as RecipeWithProfile[] | null;
     if (recipes) {
       const ratingMap = new Map<string, { sum: number; count: number }>();
       const recipeIds = recipes.map((recipe) => recipe.id);
@@ -166,11 +170,12 @@ export default function ProfilePage() {
       }
       setUser(user);
 
-      const { data: profile } = await supabase
+      const { data: profileData } = await supabase
         .from("profiles")
         .select("avatar_url")
         .eq("id", user.id)
         .single();
+      const profile = profileData as { avatar_url: string | null } | null;
       if (profile?.avatar_url) {
         setProfileAvatarUrl(profile.avatar_url);
       }
@@ -187,7 +192,7 @@ export default function ProfilePage() {
     const supabase = createClient();
     await supabase
       .from("profiles")
-      .update({ avatar_url: avatarSrc })
+      .update({ avatar_url: avatarSrc } as never)
       .eq("id", user.id);
     setProfileAvatarUrl(avatarSrc);
     setShowAvatarPicker(false);

@@ -38,14 +38,6 @@ export default function LoginPage() {
     router.refresh();
   }
 
-  async function handleOAuth(provider: "google" | "github") {
-    const supabase = createClient();
-    await supabase.auth.signInWithOAuth({
-      provider,
-      options: { redirectTo: `${window.location.origin}/auth/callback` },
-    });
-  }
-
   async function handleForgotPassword() {
     if (!email.trim()) {
       setError(t("login.resetNeedEmail"));
